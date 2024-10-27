@@ -1,0 +1,60 @@
+// homepagina
+
+    //navigatie
+    experience
+    skill
+    hire
+
+Who am I? 
+
+My name is Alexander Hamilton, one of the Founding Fathers of the United States of America. I rose from humble beginnings and became a key figure in American history. 
+My journey is one of relentless ambition and intellectual prowess to the principles of a new nation. 
+I was George Washington's right hand man and the first secretary of Treasury. Addiontionally, I played a crucial role in the American Revolutionary War and co-wrote the Federalist Papers. 
+I am a hard working man with a fierce dedication and unwavering loyalty. I can handle all tasks from financial aid to writing 51 essays.
+My legacy is one of innovation, resilience, and a profound impact on the shaping of the United States.
+
+    //quote
+    "I am not throwing away my shot"
+
+    //contact
+    "Do you want to hire me? Do you have any questions? Feel free to contact me by filling out the form below:"
+
+    //form -> placeholders:
+    Name
+    Email
+    Subject
+    Comment
+
+//hire
+
+Hire
+
+    Services
+
+    Accountant
+        I will manage your financial records, draft contracts and manage your budget.
+
+    Tutor
+        I tutor all ages on economics, American history and politics. 
+
+    Workshops
+        I give multiple workshops regarding speech enhancement, delivering a speech, how to write essays, etc. All of these can be booked for individuals or groups from 2-10 people.
+
+//skills 
+
+Skills
+   
+    ....
+    .....
+
+    ....
+    .....
+
+    ....
+    .....
+
+    ...
+    ....
+
+    //quote 
+    "Don't be shocked when your history book mentions me"
