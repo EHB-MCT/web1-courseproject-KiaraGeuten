@@ -189,11 +189,14 @@ h2 {
 /* aligning wrap span worskshops */
 
 .button {
-  border: 1px solid #8b641f;
   background-color: #8b641f;
   border-radius: 10px;
   width: 60px;
   padding: 10px;
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.button:hover {
+  background-color: #59380d;
 }
