@@ -1,5 +1,6 @@
 body {
   background-color: #c39236;
+  color: #fff;
 }
 
 nav {
@@ -7,25 +8,145 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 41.5px 0;
+  padding: 41.5px 40px 41.5px 0;
+  align-items: center;
 }
 
 nav ul li {
   display: inline;
-  font-size: 24px;
+  font-size: 30px;
   margin-right: 28px;
+  padding: 10px;
 }
 a {
   text-decoration: none;
   color: #fff;
+  margin: 0;
+  /* FIX LEFT RIGHT */
 }
 
 nav img {
-  width: 100px;
+  width: 220px;
 }
 
-h1 {
+nav h1 {
+  font-weight: normal;
   flex-wrap: wrap;
-  font-size: 50px;
+  font-size: 60px;
+  padding-left: 250px;
   margin: 0;
 }
+
+h2 {
+  font-weight: normal;
+  font-size: 60px;
+  /* flex-wrap: wrap; */
+  color: #8b641f;
+  text-align: center;
+}
+.image1 img {
+  /* flex-wrap: wrap; */
+  padding-left: 30px;
+  padding-top: 150px;
+  width: 1000px;
+}
+
+.homepage {
+  display: flex;
+}
+
+.intro h2 {
+  padding-top: 30px;
+}
+
+.intro {
+  margin-left: 70px;
+  text-align: justify;
+  width: 900px;
+  padding-right: 30px;
+}
+
+.intro span {
+  font-size: 26px;
+  display: inline;
+  padding-top: 50px;
+  float: left;
+
+  /* outline + space between title and paragraphs*/
+}
+
+.hire {
+  display: flex;
+}
+
+.hire img {
+  width: 1000px;
+  padding-right: 30px;
+}
+
+.hiretext {
+  padding-right: 80px;
+  font-size: 55px;
+  text-align: right;
+}
+.Accountant-img img {
+  width: 500px;
+}
+
+.Tutor-img img {
+  width: 500px;
+  padding-left: 20px;
+}
+.Workshop-img img {
+  width: 500px;
+  padding-left: 20px;
+}
+
+.colums {
+  display: flex;
+}
+/* images fix + centereren paragarphs */
+
+div.Accountant {
+  width: 33%;
+}
+
+div.Tutor {
+  width: 33%;
+}
+div.Workshop {
+  width: 33%;
+}
+
+.contact {
+  margin: 0 auto;
+}
+
+.imagestar img {
+  width: 700px;
+  padding-top: 90px;
+}
+
+.quote1 {
+  display: flex;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.quote1 h2 {
+  padding-top: 20px;
+}
+/* alignment fix */
+
+.contact {
+  display: flex;
+}
+.hireme {
+  flex-wrap: wrap;
+}
+
+.imagecontact img {
+  width: 1000px;
+  flex-wrap: wrap;
+}
+/*  flex issue */

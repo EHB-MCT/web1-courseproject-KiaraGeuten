@@ -58,3 +58,9 @@ Skills
 
     //quote 
     "Don't be shocked when your history book mentions me"
+
+
+
+
+    brown
+    #59380d
