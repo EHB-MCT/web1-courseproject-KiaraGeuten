@@ -82,6 +82,7 @@ h2 {
 .hire img {
   width: 1000px;
   padding-right: 30px;
+  padding-top: 80px;
 }
 
 .hiretext {
@@ -95,28 +96,15 @@ h2 {
 
 .Tutor-img img {
   width: 500px;
-  padding-left: 20px;
 }
 .Workshop-img img {
   width: 500px;
-  padding-left: 20px;
 }
 
 .colums {
   display: flex;
 }
 /* images fix + centereren paragarphs */
-
-div.Accountant {
-  width: 33%;
-}
-
-div.Tutor {
-  width: 33%;
-}
-div.Workshop {
-  width: 33%;
-}
 
 .contact {
   margin: 0 auto;
@@ -139,14 +127,73 @@ div.Workshop {
 /* alignment fix */
 
 .contact {
+  display: grid;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, auto));
+}
+
+.form input {
+  margin-top: 20px;
+  padding-top: 15px;
+  margin-left: 20px;
+  width: 900px;
+}
+.form {
+  margin-top: 130px;
+  margin-left: 23px;
+}
+.contacttext h1 {
+  padding-left: 30px;
+  align-items: center;
+  font-size: 40px;
+}
+.form .name {
   display: flex;
 }
-.hireme {
-  flex-wrap: wrap;
+.form .name input {
+  width: 435px;
 }
 
 .imagecontact img {
-  width: 1000px;
-  flex-wrap: wrap;
+  width: 700px;
+  padding-left: 20px;
 }
 /*  flex issue */
+
+.hiretext h2 {
+  text-align: center;
+  padding-left: 100px;
+  padding-top: 120px;
+}
+
+.Accountant {
+  padding-left: 60px;
+}
+
+.explanation {
+  margin-top: 20px;
+  margin-left: 43px;
+  font-size: 30px;
+  grid-column: 2/3;
+  width: 920px;
+}
+/* move down grid issue */
+.Tutor {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Workshop {
+  padding-left: 60px;
+}
+/* aligning wrap span worskshops */
+
+.button {
+  border: 1px solid #8b641f;
+  background-color: #8b641f;
+  border-radius: 10px;
+  width: 60px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
