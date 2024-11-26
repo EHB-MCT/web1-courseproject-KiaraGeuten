@@ -47,6 +47,7 @@ h1 {
   color: #fff;
   text-align: center;
 }
+
 .image1 img {
   width: 1000px;
 }
@@ -119,12 +120,6 @@ h3 {
   flex: 1;
 }
 
-.space {
-  margin-top: 20px;
-  grid-column: 2/3;
-  width: 920px;
-}
-
 .Tutor {
   flex: 1;
 }
@@ -144,10 +139,14 @@ h3 {
 
 .contact {
   display: grid;
-  grid-template-columns: repeat (12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, minmax(100px, auto));
   margin: 30px;
   margin-top: 0;
+
+  .contacttext {
+    grid-column: 1/4;
+  }
 }
 h2 {
   font-weight: normal;
@@ -155,9 +154,8 @@ h2 {
   color: #8b641f;
   text-align: left;
 }
+
 .form {
-  display: flex;
-  align-items: center;
   margin-bottom: 0;
 }
 .form input {
@@ -169,6 +167,64 @@ h2 {
 
 .imagecontact img {
   width: 700px;
+}
+
+.contact {
+  gap: 1rem;
+  .imagecontact {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/4;
+    gap: 0.8rem;
+    max-width: 700px;
+
+    .contact_fields {
+      display: flex;
+      flex-direction: row;
+      gap: 0.8rem;
+    }
+    .field {
+      position: relative;
+      flex: 1 1 50%;
+    }
+    .field {
+      border: 1px solid grey;
+    }
+    label {
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      color: grey;
+      pointer-events: none;
+    }
+    textarea,
+    input {
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 6px;
+      border: 0;
+      appearance: none;
+    }
+    textarea:focus-visible,
+    input:focus-visible {
+      border-color: black;
+      padding: 12px 6px 4px 10px;
+
+      & + label {
+        font-size: 8px;
+        top: 4px;
+        left: 10px;
+      }
+    }
+  }
 }
 .form p {
   font-size: 30px;
@@ -212,6 +268,7 @@ h2 {
   .homepage {
     flex-direction: column;
     align-items: center;
+    margin: 20px;
   }
   .intro span {
     font-size: 20px;
@@ -228,5 +285,70 @@ h2 {
   }
   nav {
     display: none;
+  }
+  .intro {
+    width: 350px;
+    margin: 0 auto;
+  }
+  /* hire me */
+
+  .hire img {
+    width: 150%;
+  }
+  .hiretext span {
+    font-size: 30px;
+    align-items: center;
+  }
+  .hiretext h2 {
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 0;
+  }
+  .hiretext {
+    margin-bottom: 20px;
+  }
+  .hire {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+    margin: 20px;
+  }
+  .colums {
+    flex-direction: column;
+  }
+  .colums img {
+    width: 100%;
+  }
+  .colums span {
+    font-size: 30px;
+    width: 100%;
+  }
+  .quote1 {
+    display: none;
+  }
+  .imagecontact img {
+    width: 50%;
+  }
+
+  .contact {
+    margin: 20px;
+  }
+  .form > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .form input {
+    margin-top: 20px;
+    padding-top: 15px;
+    margin-left: 20px;
+    width: 300px;
+  }
+  h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
   }
 }

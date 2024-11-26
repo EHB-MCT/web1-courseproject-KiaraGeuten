@@ -22,7 +22,7 @@
     <div class="wrapper">
       <div class="hire">
         <div class="hiretext">
-          <h1>Hire me</h1>
+          <h2>Hire me</h2>
           <span
             >I loan my services to young and old. You're never to old to learn.
           </span>
@@ -34,7 +34,7 @@
 
       <div class="Services">
         <div class="header">
-          <h1>Services</h1>
+          <h2>Services</h2>
         </div>
         <div class="colums">
           <div class="Accountant">
@@ -86,38 +86,40 @@
           <h1>"I am not throwing away my shot"</h1>
           <!-- add quote marks -->
         </div>
-        <div class="contact">
-          <div class="contacttext">
-            <h2>Contact</h2>
-          </div>
-          <div class="space">
-            <div class="hireme"></div>
-          </div>
-          <!-- space look after it -->
+      </div>
+      <div class="contact">
+        <div class="contacttext">
+          <h2>Contact</h2>
+        </div>
+        <!-- space look after it -->
 
-          <div class="imagecontact">
-            <img src="images/with the boys blue.jpeg" />
-            <!-- add image -->
-          </div>
-          <div class="form">
-            <div>
-              <p>
-                Do you want to hire me? Do you have any questions? Feel free to
-                contact me by filling out the form below:
-              </p>
-              <div class="name">
-                <input id="vakje1" type="text" placeholder="Name" />
-                <input id="vakje2" type="text" placeholder="E-mail" />
-              </div>
-              <input type="text" placeholder="Subject" />
-              <input type="text" placeholder="Details" />
-
-              <div class="button">
-                <a href="hire.html">SUBMIT</a>
-              </div>
+        <div class="imagecontact">
+          <img src="images/with the boys blue.jpeg" />
+          <!-- add image -->
+        </div>
+        <form id="ContactForm" class="isolate">
+          <div class="contact_fields">
+            <div class="field">
+              <input class="field_input" type="text" />
+              <label class="field_label">Name</label>
+            </div>
+            <div class="field">
+              <input type="email" class="field_input" />
+              <label class="field_label">Email</label>
             </div>
           </div>
-        </div>
+          <div class="field">
+            <input type="tel" class="field_input" />
+            <label class="field_label">Phone number</label>
+          </div>
+          <div class="field">
+            <textarea rows="10" class="field_input"></textarea>
+            <label class="form_label field_label">Comment</label>
+          </div>
+          <div class="contact_button">
+            <button type="submit" class="button">Send</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
