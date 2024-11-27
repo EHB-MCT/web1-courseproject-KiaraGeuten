@@ -44,18 +44,15 @@ I loan my services to young and old. You're never to old to learn.
 
 Skills
    
-    ....
-    .....
+    writing
+    From an academic essay to an itemized list of 30 years of diagreements, he can write the other 51.
 
-    ....
-    .....
+    public speaking
+    In court or to defend his work, he is not afraid to let everyone who is willing to listen know his stance. They don't have to love him for his opinions, they just don't like Burr.
 
-    ....
-    .....
+   
 
-    ...
-    ....
-
+  
     //quote 
     "Don't be shocked when your history book mentions me"
 
@@ -63,4 +60,4 @@ Skills
 
 
     brown
-    #59380d
+    #59380d  years of diag
