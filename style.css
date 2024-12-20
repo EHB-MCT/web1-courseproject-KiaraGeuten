@@ -8,42 +8,58 @@ body img {
   width: 100%;
 }
 nav {
-  background-color: #8b641f;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 41.5px 40px 41.5px 0;
+  background-color: #8b641f;
   align-items: center;
-}
+  padding: 10px 20px 10px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
-.hamburger {
-  display: none;
-}
-nav ul li {
-  display: inline;
-  font-size: 30px;
-  margin-right: 28px;
-  padding: 10px;
-}
-a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0;
-}
+  a {
+    img {
+      height: 100px;
+    }
+  }
+  h1 {
+    font-size: 50px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding-left: 100px;
+  }
+  .toggle {
+    display: none;
+  }
+  .nav-buttons {
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      padding-right: 12px;
 
-nav img {
-  width: 220px;
-}
+      li {
+        display: inline;
 
-nav h1 {
-  font-weight: normal;
-  flex-wrap: wrap;
-  font-size: 60px;
-  padding-left: 250px;
-  margin: 0;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+          text-wrap: nowrap;
+        }
+      }
+    }
+    img {
+      display: none;
+    }
+  }
 }
 
 /* homepage */
+
 h1 {
   font-weight: normal;
   font-size: 60px;
@@ -58,6 +74,7 @@ h1 {
 .homepage {
   display: flex;
   margin: 30px;
+  margin-top: 113px;
 }
 
 .intro h1 {
@@ -68,15 +85,12 @@ h1 {
   margin-left: 70px;
   text-align: justify;
   width: 900px;
-  padding-right: 30px;
 }
 
 .intro span {
   font-size: 26px;
   display: inline;
   float: left;
-
-  /* outline + space between title and paragraphs*/
 }
 
 /* hire */
@@ -86,9 +100,6 @@ h1 {
   margin-bottom: 90px;
 }
 
-.hire img {
-  width: 1000px;
-}
 .hiretext h1 {
   text-align: center;
   padding-top: 120px;
@@ -256,20 +267,31 @@ h2 {
   background-color: #59380d;
 }
 /* skills */
-.kaders img {
-  width: 70%;
-  display: flex;
+.kaders {
+  margin: 30px;
+  margin-top: 50px;
+  img {
+    width: 58%;
+    display: flex;
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
+  span {
+    flex-direction: column;
+  }
 }
+
 .Skills {
   display: flex;
-}
-.kaders span {
-  flex-direction: column;
 }
 .h2 .header {
   text-align: center;
 
   /* doesnt work */
+}
+.skilltext {
+  padding-left: 20px;
 }
 /* mobile */
 
@@ -294,17 +316,84 @@ h2 {
     font-size: 20px;
   }
   /* readability */
-  nav img {
-    width: 170px;
-  }
   nav {
+    display: grid;
+    grid-template-columns: auto 1fr 48px;
     padding: 0;
-  }
-  .hamburger {
-    display: block;
-  }
-  nav {
-    display: none;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+    }
+    img {
+      height: 75px;
+      width: unset;
+      margin: 0 auto;
+    }
+    /* hamburger menu */
+    .lbl-toggle {
+      display: block;
+      position: relative;
+      width: 24px;
+      height: 20px;
+      left: 12px;
+      flex: 0 0 auto;
+    }
+
+    .line {
+      position: absolute;
+      background-color: white;
+      width: 24px;
+      height: 2px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .toggle:checked + .lbl-toggle + .nav-buttons.collapsible-content {
+      transform: translateX(0);
+    }
+    .line.l1 {
+      top: 0;
+      right: 0;
+    }
+    .line.l2 {
+      top: 9px;
+      right: 0;
+    }
+    .line.l3 {
+      top: 18px;
+      right: 0;
+    }
+    .toggle:checked + .lbl-toggle .line.l1 {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .toggle:checked + .lbl-toggle .line.l2 {
+      opacity: 0;
+    }
+    .toggle:checked + .lbl-toggle .line.l3 {
+      transform: rotate(-45deg) translate(7px, -8px);
+    }
+    .nav-buttons.collapsible-content {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      height: 100vh;
+      width: 80vw;
+      transform: translateX(-100vw);
+      transition: transform 0.5s;
+      background-color: rgba(139, 100, 31, 0.8);
+      backdrop-filter: blur(4px);
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 75px;
+      }
+      img {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+      }
+    }
   }
   .intro {
     width: 350px;
@@ -336,9 +425,7 @@ h2 {
   .colums {
     flex-direction: column;
   }
-  .colums img {
-    width: 100%;
-  }
+
   .colums span {
     font-size: 30px;
     width: 100%;
@@ -379,3 +466,10 @@ h2 {
 /* in the middle prob hire text span center */
 /* services images fix */
 /* button contact form in form */
+/* hamburger menu */
+/* image heaer crop */
+/* padding fix header */
+/* skills font size spans */
+/* images th child look */
+/* header fixed ugly contact */
+/* homepage head margins */
