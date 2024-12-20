@@ -4,6 +4,9 @@ body {
   margin: 0;
 }
 
+body img {
+  width: 100%;
+}
 nav {
   background-color: #8b641f;
   display: flex;
@@ -95,19 +98,19 @@ h1 {
   font-size: 40px;
   align-items: center;
 }
-/* in the middle prob */
 
 .colums {
   display: flex;
+  margin-bottom: 90px;
+}
+.Services {
   margin: 30px;
-  margin-bottom: 30;
-  gap: 30px;
+  margin-bottom: 0px;
+}
+.colums img {
+  width: 90%;
 }
 
-.colums img {
-  width: 100%;
-}
-/* images fix  */
 h3 {
   font-size: 30px;
   margin-bottom: 15px;
@@ -127,11 +130,10 @@ h3 {
 .Workshops {
   flex: 1;
 }
-
 .imagestar img {
   width: 700px;
 }
-/* nr onder */
+
 .quote1 {
   display: flex;
   align-items: center;
@@ -146,6 +148,9 @@ h3 {
 
   .contacttext {
     grid-column: 1/4;
+  }
+  .contacttext h2 {
+    margin-bottom: 10px;
   }
 }
 h2 {
@@ -250,7 +255,22 @@ h2 {
 .button:hover {
   background-color: #59380d;
 }
+/* skills */
+.kaders img {
+  width: 70%;
+  display: flex;
+}
+.Skills {
+  display: flex;
+}
+.kaders span {
+  flex-direction: column;
+}
+.h2 .header {
+  text-align: center;
 
+  /* doesnt work */
+}
 /* mobile */
 
 @media screen and (max-width: 440px) {
@@ -352,3 +372,10 @@ h2 {
     flex-direction: column;
   }
 }
+
+/* h2 hire me goed, skills en services niet */
+/* q1 servicesnr onder */
+/* images fix skills h3 */
+/* in the middle prob hire text span center */
+/* services images fix */
+/* button contact form in form */
