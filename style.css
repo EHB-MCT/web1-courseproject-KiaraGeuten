@@ -3,18 +3,20 @@ body {
   color: #fff;
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  img {
+    width: 100%;
+  }
 }
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-body img {
   width: 100%;
 }
+
 nav {
   display: flex;
   flex-direction: row;
@@ -65,11 +67,18 @@ nav {
     }
   }
 }
+
 h1 {
   font-weight: normal;
-  font-size: 60px;
+  font-size: 50px;
   color: #fff;
   text-align: center;
+}
+h2 {
+  font-weight: normal;
+  font-size: 60px;
+  color: #8b641f;
+  text-align: left;
 }
 h3 {
   font-size: 30px;
@@ -87,13 +96,26 @@ h3 {
   img {
     display: block;
   }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    a {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: blueviolet;
+      text-decoration: none;
+      color: #fff;
+      width: fit-content;
+    }
+  }
 }
 
 /* hire */
 .hire {
   display: flex;
-  margin: 30px;
-  margin-bottom: 90px;
+  padding: 30px;
+  margin-bottom: 0;
+  box-sizing: border-box;
 
   .hiretext {
     display: flex;
@@ -101,6 +123,7 @@ h3 {
     justify-content: center;
     h2 {
       margin: 0;
+      margin-bottom: 20px;
     }
     span {
       font-size: 40px;
@@ -108,77 +131,60 @@ h3 {
   }
 }
 
-.colums {
-  display: flex;
-  margin-bottom: 90px;
-}
-.Services {
-  margin: 30px;
+.services {
+  padding: 0 30px;
   margin-bottom: 0px;
-}
-.colums img {
-  width: 90%;
-}
+  box-sizing: border-box;
 
-.colums span {
-  font-size: 25px;
-}
-.Accountant {
-  flex: 1;
-}
+  .colums {
+    display: flex;
+    margin-bottom: 90px;
+    gap: 15px;
+    span {
+      font-size: 25px;
+    }
+    .Accountant {
+      flex: 1;
+    }
 
-.Tutor {
-  flex: 1;
-}
+    .Tutor {
+      flex: 1;
+    }
 
-.Workshops {
-  flex: 1;
-}
-.imagestar img {
-  width: 60%;
+    .Workshops {
+      flex: 1;
+    }
+  }
 }
 
 .quote1 {
   display: flex;
   align-items: center;
+  .imagestar img {
+    width: 60%;
+  }
 }
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 6fr 8fr;
   grid-template-rows: repeat(2, minmax(100px, auto));
-  margin: 30px;
+  padding: 30px;
   margin-top: 0;
+  box-sizing: border-box;
 
   .contacttext {
-    grid-column: 1/4;
+    grid-column: 1/3;
+  }
+  .imagecontact {
+    grid-column: 1/2;
+    img {
+      width: 700px;
+    }
   }
   .contacttext h2 {
     margin-bottom: 10px;
   }
-}
-h2 {
-  font-weight: normal;
-  font-size: 60px;
-  color: #8b641f;
-  text-align: left;
-}
-
-.form {
-  margin-bottom: 0;
-}
-.form input {
-  margin-top: 20px;
-  padding-top: 15px;
-  margin-left: 20px;
-  width: 900px;
-}
-
-.imagecontact img {
-  width: 700px;
-}
-
-.contact {
   gap: 1rem;
   .imagecontact {
     width: 100%;
@@ -190,9 +196,10 @@ h2 {
   form {
     display: flex;
     flex-direction: column;
-    grid-column: 2/4;
+    grid-column: 2/3;
     gap: 0.8rem;
     max-width: 700px;
+    margin-bottom: 0;
 
     .contact_fields {
       display: flex;
@@ -203,9 +210,7 @@ h2 {
       position: relative;
       flex: 1 1 50%;
     }
-    .field {
-      border: 1px solid grey;
-    }
+
     label {
       position: absolute;
       left: 8px;
@@ -221,7 +226,23 @@ h2 {
       border-radius: 6px;
       border: 0;
       appearance: none;
+      &::placeholder {
+        color: transparent;
+      }
     }
+    textarea:not(:placeholder-shown) + label,
+    input:not(:placeholder-shown) + label {
+      font-size: 8px;
+      top: 4px;
+      left: 10px;
+    }
+
+    textarea:not(:placeholder-shown),
+    input:not(:placeholder-shown) {
+      border-color: black;
+      padding: 12px 6px 4px 10px;
+    }
+
     textarea:focus-visible,
     input:focus-visible {
       border-color: black;
@@ -233,45 +254,34 @@ h2 {
         left: 10px;
       }
     }
+    .button {
+      background-color: #8b641f;
+      border-radius: 10px;
+      width: 60px;
+      padding: 10px;
+      margin-top: 20px;
+      border: 0;
+      color: #fff;
+    }
+    .button:hover {
+      background-color: blue;
+    }
   }
 }
-.form p {
-  font-size: 30px;
-  padding-left: 20px;
-}
 
-.form .name {
-  display: flex;
-}
-.form .name input {
-  width: 435px;
-}
-
-.button {
-  background-color: #8b641f;
-  border-radius: 10px;
-  width: 60px;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.button:hover {
-  background-color: #59380d;
-}
 /* skills */
 .kaders {
   margin: 30px;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   & > * {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     & > * {
-      flex: 0 0 50%;
+      flex: 0 1 50%;
     }
   }
 
@@ -279,7 +289,7 @@ h2 {
     display: flex;
   }
   h2 {
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
   }
   span {
     flex-direction: column;
@@ -287,18 +297,10 @@ h2 {
   }
 }
 
-.Skills {
-  display: flex;
-}
-.h2 .header {
-  text-align: center;
-
-  /* doesnt work */
-}
-
 .speaking {
   flex-direction: row-reverse;
 }
+
 /* web vereiste */
 @media screen and (min-width: 851px) {
   .intro {
@@ -308,7 +310,7 @@ h2 {
     inset: 0;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     box-sizing: border-box;
     align-items: end;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
@@ -322,7 +324,6 @@ h2 {
   }
 }
 /* mobile */
-
 @media screen and (max-width: 440px) {
   /* homepage */
 
@@ -345,7 +346,11 @@ h2 {
   .intro span {
     font-size: 19px;
   }
-  /* readability */
+  .intro {
+    width: 350px;
+    margin: 0 auto;
+  }
+
   nav {
     display: grid;
     grid-template-columns: auto 1fr 48px;
@@ -356,7 +361,7 @@ h2 {
       padding: 0;
       font-size: 18px;
     }
-    img {
+    a img {
       width: 19% !important;
       margin: 0 auto;
       padding-left: 10px;
@@ -424,57 +429,55 @@ h2 {
         display: block;
         bottom: 0;
         width: 50%;
-        left: 35%;
+        left: 25%;
       }
     }
   }
-  .intro {
-    width: 350px;
-    margin: 0 auto;
-  }
+
   /* hire me */
 
-  .hire img {
-    width: 100vw;
-    margin-left: -20px;
-  }
-  .hiretext span {
-    font-size: 30px;
-  }
-  .hiretext h2 {
-    text-align: center;
-    margin-bottom: 0;
-  }
-  .hiretext {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   .hire {
     display: flex;
     flex-direction: column;
-    margin-bottom: 90px;
-    margin: 20px;
+    padding: 20px;
+    img {
+      width: 100vw;
+      margin-left: -20px;
+    }
+    .hiretext {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        text-align: center;
+        margin: 0 0 10px 0;
+      }
+      span {
+        text-align: center;
+      }
+    }
   }
   .colums {
     flex-direction: column;
-  }
-
-  .colums span {
-    font-size: 30px;
-    width: 100%;
+    margin-bottom: 0;
+    span {
+      font-size: 30px;
+      width: 100%;
+    }
   }
   .quote1 {
     display: none;
   }
-  .imagecontact img {
-    width: 50%;
-  }
-
   .contact {
-    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 50%;
+    }
   }
   .form > div {
     display: flex;
@@ -486,28 +489,20 @@ h2 {
     margin-left: 20px;
     width: 300px;
   }
-  h2 {
-    text-align: center;
-    margin: 0 0 10px 0;
-  }
-  .contact {
-    display: flex;
-    flex-direction: column;
-  }
+
   .kaders {
     gap: 50px;
   }
   .kaders > * {
     flex-direction: column;
   }
-
   .quote2 h1 {
     font-size: 18px;
   }
 }
 
 /* ipad */
-@media screen and (max-width: 851px) {
+@media screen and (max-width: 850px) {
   .homepage {
     flex-direction: column;
     h1 {
@@ -515,21 +510,22 @@ h2 {
       text-align: start;
     }
   }
-
   .kaders {
     margin-top: 0;
   }
-  .hire span {
+  .hire .hiretext span {
     font-size: 30px;
+  }
+  .colums {
+    gap: 50px;
+    h3 {
+      padding-top: 20px;
+    }
+  }
+  .contact {
+    grid-template-columns: 8fr 7fr;
   }
 }
 
-/* services workshops fixed + spatie img en tutor */
-/* mobile homepage scroll*/
 /* images skills crop */
-/* hire me mobile */
 /* header niet meer fixed position bij hire me page */
-/* ipad fixen alle sites */
-/* gaps mobile hire me services */
-/* mobile hire me contact */
-/* mobile header alex midden groter */
