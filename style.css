@@ -29,7 +29,7 @@ nav {
 
   a {
     img {
-      height: 100px;
+      width: 100px;
     }
   }
   h1 {
@@ -65,40 +65,27 @@ nav {
     }
   }
 }
-
-/* homepage */
-
 h1 {
   font-weight: normal;
   font-size: 60px;
   color: #fff;
   text-align: center;
 }
+h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+/* homepage */
 
 .homepage {
   display: flex;
   margin: 30px;
   height: fit-content;
   position: relative;
-}
-
-.intro {
-  padding: 23px;
-  width: 100%;
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  box-sizing: border-box;
-  align-items: end;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
-  * {
-    text-align: end;
-  }
-  span {
-    font-size: 26px;
-    width: 45%;
+  img {
+    display: block;
   }
 }
 
@@ -107,16 +94,18 @@ h1 {
   display: flex;
   margin: 30px;
   margin-bottom: 90px;
-}
 
-.hiretext h1 {
-  text-align: center;
-  padding-top: 120px;
-}
-
-.hiretext span {
-  font-size: 40px;
-  align-items: center;
+  .hiretext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      margin: 0;
+    }
+    span {
+      font-size: 40px;
+    }
+  }
 }
 
 .colums {
@@ -131,11 +120,6 @@ h1 {
   width: 90%;
 }
 
-h3 {
-  font-size: 30px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
 .colums span {
   font-size: 25px;
 }
@@ -151,7 +135,7 @@ h3 {
   flex: 1;
 }
 .imagestar img {
-  width: 700px;
+  width: 60%;
 }
 
 .quote1 {
@@ -269,7 +253,6 @@ h2 {
   width: 60px;
   padding: 10px;
   margin-top: 20px;
-  margin-left: 20px;
 }
 
 .button:hover {
@@ -279,15 +262,28 @@ h2 {
 .kaders {
   margin: 30px;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  & > * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    & > * {
+      flex: 0 0 50%;
+    }
+  }
+
   img {
-    width: 58%;
     display: flex;
   }
   h2 {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   span {
     flex-direction: column;
+    font-size: 20px;
   }
 }
 
@@ -299,8 +295,31 @@ h2 {
 
   /* doesnt work */
 }
-.skilltext {
-  padding-left: 20px;
+
+.speaking {
+  flex-direction: row-reverse;
+}
+/* web vereiste */
+@media screen and (min-width: 851px) {
+  .intro {
+    padding: 23px;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+    align-items: end;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+    * {
+      text-align: end;
+    }
+    span {
+      font-size: 18px;
+      width: 43%;
+    }
+  }
 }
 /* mobile */
 
@@ -314,15 +333,17 @@ h2 {
   .intro {
     width: 300px;
     margin: 0;
+    h1 {
+      margin-bottom: 20px;
+    }
   }
 
   .homepage {
-    flex-direction: column;
     align-items: center;
     margin: 0px;
   }
   .intro span {
-    font-size: 20px;
+    font-size: 19px;
   }
   /* readability */
   nav {
@@ -336,9 +357,10 @@ h2 {
       font-size: 18px;
     }
     img {
-      height: 75px;
-      width: unset;
+      width: 19% !important;
       margin: 0 auto;
+      padding-left: 10px;
+      padding-top: 3px;
     }
     /* hamburger menu */
     .lbl-toggle {
@@ -348,6 +370,7 @@ h2 {
       height: 20px;
       left: 12px;
       flex: 0 0 auto;
+      z-index: 10;
     }
 
     .line {
@@ -358,7 +381,7 @@ h2 {
       transition: transform 0.2s, opacity 0.2s;
     }
     .toggle:checked + .lbl-toggle + .nav-buttons.collapsible-content {
-      transform: translateX(0);
+      transform: translateX(20vw);
     }
     .line.l1 {
       top: 0;
@@ -387,7 +410,7 @@ h2 {
       top: 0;
       height: 100vh;
       width: 80vw;
-      transform: translateX(-100vw);
+      transform: translateX(100vw);
       transition: transform 0.5s;
       background-color: rgba(139, 100, 31, 0.8);
       backdrop-filter: blur(4px);
@@ -400,7 +423,8 @@ h2 {
         position: absolute;
         display: block;
         bottom: 0;
-        width: 100%;
+        width: 50%;
+        left: 35%;
       }
     }
   }
@@ -470,20 +494,42 @@ h2 {
     display: flex;
     flex-direction: column;
   }
+  .kaders {
+    gap: 50px;
+  }
+  .kaders > * {
+    flex-direction: column;
+  }
+
+  .quote2 h1 {
+    font-size: 18px;
+  }
 }
 
-/* h2 hire me goed, skills en services niet */
-/* q1 servicesnr onder */
-/* images fix skills h3 */
-/* in the middle prob hire text span center */
-/* services images fix */
-/* button contact form in form */
-/* hamburger menu */
-/* image heaer crop */
-/* padding fix header ?*/
-/* skills font size spans */
-/* images th child look */
-/* header fixed ugly contact */
-/* homepage head margins */
+/* ipad */
+@media screen and (max-width: 851px) {
+  .homepage {
+    flex-direction: column;
+    h1 {
+      font-size: 40px;
+      text-align: start;
+    }
+  }
 
-/* homepage crop */
+  .kaders {
+    margin-top: 0;
+  }
+  .hire span {
+    font-size: 30px;
+  }
+}
+
+/* services workshops fixed + spatie img en tutor */
+/* mobile homepage scroll*/
+/* images skills crop */
+/* hire me mobile */
+/* header niet meer fixed position bij hire me page */
+/* ipad fixen alle sites */
+/* gaps mobile hire me services */
+/* mobile hire me contact */
+/* mobile header alex midden groter */
