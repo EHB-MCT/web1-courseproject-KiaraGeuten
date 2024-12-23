@@ -23,26 +23,27 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
 
 - HTML:
 
-````<nav>
-      <a href="index.html">
-        <img src="images/Hamilton-Logo.png" alt: "logo Hamilton"/>
-      </a>
-      <h1>Alexander Hamilton</h1>
-      <input id="header-collapsible" class="toggle" type="checkbox" />
-      <label for="header-collapsible" class="lbl-toggle">
-        <div class="l1 line"></div>
-        <div class="l2 line"></div>
-        <div class="l3 line"></div>
-      </label>
-      <div class="nav-buttons collapsible-content">
-        <ul>
-          <li><a href="#">Experience</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="hire.html">Hire me</a></li>
-        </ul>
-        <img src="images/Hamilton-Logo.png" alt="logo Hamilton" />
-      </div>
-    </nav> ```
+``<nav>
+<a href="index.html">
+<img src="images/Hamilton-Logo.png" alt: "logo Hamilton"/>
+</a>
+<h1>Alexander Hamilton</h1>
+<input id="header-collapsible" class="toggle" type="checkbox" />
+<label for="header-collapsible" class="lbl-toggle">
+<div class="l1 line"></div>
+<div class="l2 line"></div>
+<div class="l3 line"></div>
+</label>
+<div class="nav-buttons collapsible-content">
+<ul>
+<li><a href="#">Experience</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="hire.html">Hire me</a></li>
+</ul>
+<img src="images/Hamilton-Logo.png" alt="logo Hamilton" />
+</div>
+</nav>
+```
 
     ```<form id="ContactForm" class="isolate">
           <div class="contact_fields">
@@ -70,11 +71,12 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
           <div class="contact_button">
             <button type="submit" class="button">Send</button>
           </div>
-        </form>```
+        </form>
+    ```
 
 - CSS:
 
-``` nav {
+```nav {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -220,4 +222,4 @@ margin-bottom: 0;
 
 }
 }
-````
+```
