@@ -23,10 +23,12 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
 
 - HTML:
 
-``<nav>
+```<nav>
+
 <a href="index.html">
 <img src="images/Hamilton-Logo.png" alt: "logo Hamilton"/>
 </a>
+
 <h1>Alexander Hamilton</h1>
 <input id="header-collapsible" class="toggle" type="checkbox" />
 <label for="header-collapsible" class="lbl-toggle">
@@ -43,9 +45,8 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
 <img src="images/Hamilton-Logo.png" alt="logo Hamilton" />
 </div>
 </nav>
-```
 
-    ```<form id="ContactForm" class="isolate">
+<form id="ContactForm" class="isolate">
           <div class="contact_fields">
             <div class="field">
               <input class="field_input" type="text" placeholder="Name" />
@@ -72,7 +73,7 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
             <button type="submit" class="button">Send</button>
           </div>
         </form>
-    ```
+```
 
 - CSS:
 
