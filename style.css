@@ -100,12 +100,17 @@ h3 {
     display: flex;
     flex-direction: column;
     a {
-      margin-top: 10px;
-      padding: 5px 10px;
-      background-color: blueviolet;
+      margin-top: 40px;
+      font-size: 20px;
+      padding: 10px 15px;
+      background-color: #cbae62;
+      border-radius: 5px;
       text-decoration: none;
       color: #fff;
       width: fit-content;
+    }
+    a:hover {
+      background-color: #8b641f;
     }
   }
 }
@@ -160,6 +165,9 @@ h3 {
 .quote1 {
   display: flex;
   align-items: center;
+  h1 {
+    color: #8b641f;
+  }
   .imagestar img {
     width: 60%;
   }
@@ -255,16 +263,16 @@ h3 {
       }
     }
     .button {
-      background-color: #8b641f;
+      background-color: #cbae62;
       border-radius: 10px;
       width: 60px;
-      padding: 10px;
+      padding: 15px 10px;
       margin-top: 20px;
       border: 0;
       color: #fff;
     }
     .button:hover {
-      background-color: blue;
+      background-color: #8b641f;
     }
   }
 }
@@ -300,6 +308,9 @@ h3 {
 .speaking {
   flex-direction: row-reverse;
 }
+.quote2 h1 {
+  color: #8b641f;
+}
 
 /* web vereiste */
 @media screen and (min-width: 851px) {
@@ -327,28 +338,25 @@ h3 {
 @media screen and (max-width: 440px) {
   /* homepage */
 
-  .homepageimg img {
-    width: 100vw;
-  }
-
-  .intro {
-    width: 300px;
-    margin: 0;
-    h1 {
-      margin-bottom: 20px;
-    }
-  }
-
   .homepage {
     align-items: center;
-    margin: 0px;
-  }
-  .intro span {
-    font-size: 19px;
-  }
-  .intro {
-    width: 350px;
-    margin: 0 auto;
+    margin: 10px;
+    img {
+      width: 100vw;
+    }
+    .intro {
+      width: 350px;
+      margin: 0 auto;
+      span {
+        font-size: 17px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      a:hover {
+        background-color: #8b641f;
+      }
+    }
   }
 
   nav {
@@ -509,7 +517,19 @@ h3 {
       font-size: 40px;
       text-align: start;
     }
+    span {
+      font-size: 20px;
+    }
+    .intro {
+      a {
+        background-color: #cbae62;
+      }
+      a:hover {
+        background-color: #8b641f !important;
+      }
+    }
   }
+
   .kaders {
     margin-top: 0;
   }
