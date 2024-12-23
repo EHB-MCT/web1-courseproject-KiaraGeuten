@@ -23,7 +23,7 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
 
 - HTML:
 
-<nav>
+```<nav>
       <a href="index.html">
         <img src="images/Hamilton-Logo.png" alt: "logo Hamilton"/>
       </a>
@@ -220,3 +220,4 @@ margin-bottom: 0;
 
 }
 }
+```
