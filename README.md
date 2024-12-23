@@ -74,7 +74,7 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
 
 - CSS:
 
-nav {
+``` nav {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
