@@ -23,7 +23,7 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
 
 - HTML:
 
-```<nav>
+````<nav>
       <a href="index.html">
         <img src="images/Hamilton-Logo.png" alt: "logo Hamilton"/>
       </a>
@@ -42,9 +42,9 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
         </ul>
         <img src="images/Hamilton-Logo.png" alt="logo Hamilton" />
       </div>
-    </nav>
+    </nav> ```
 
-    <form id="ContactForm" class="isolate">
+    ```<form id="ContactForm" class="isolate">
           <div class="contact_fields">
             <div class="field">
               <input class="field_input" type="text" placeholder="Name" />
@@ -70,7 +70,7 @@ Thanks to Lukas Van Heddegem for the navigation and contact form:
           <div class="contact_button">
             <button type="submit" class="button">Send</button>
           </div>
-        </form>
+        </form>```
 
 - CSS:
 
@@ -220,4 +220,4 @@ margin-bottom: 0;
 
 }
 }
-```
+````
